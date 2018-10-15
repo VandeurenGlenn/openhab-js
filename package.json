@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/vandeurenglenn/openhab-js#readme",
   "dependencies": {
-    "node-fetch": "^2.2.0"
+    "niko-home-control": "^0.4.3"
   },
   "devDependencies": {
     "rollup": "^0.66.6",

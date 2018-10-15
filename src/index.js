@@ -1,15 +1,22 @@
-import fetch from 'node-fetch';
-import { join } from 'path';
+import niko from 'niko-home-control';
 
-export const get = (item = '') => {
-  const url = `http://10.0.4.1:8181/${item}`;
-  return fetch(url);
-}
-
-const set = item => {
-  const url = 'http://10.0.4.1:8181'
-  return fetch(url, {
-    method: 'POST',
-    body: value
+export default () => {
+  niko.init({
+    ip: '192.168.1.5',
+    port: 8000,
+    timeout: 20000,
+    events: true
   });
-};
+
+  niko
+    .listLocations()
+    .then(function (response) {
+      console.log(response);
+    });
+
+  niko
+    .systemInfo()
+    .then(function (response) {
+      console.log(response);
+    });
+}
