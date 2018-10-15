@@ -1,0 +1,32 @@
+{
+  "name": "openhab-js",
+  "version": "0.1.0",
+  "description": "Testing openhab",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "compile": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vandeurenglenn/openhab-js.git"
+  },
+  "keywords": [
+    "openhab",
+    "js",
+    "javascript"
+  ],
+  "author": "Glenn Vandeuren <vandeurenglenn@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vandeurenglenn/openhab-js/issues"
+  },
+  "homepage": "https://github.com/vandeurenglenn/openhab-js#readme",
+  "dependencies": {
+    "node-fetch": "^2.2.0"
+  },
+  "devDependencies": {
+    "rollup": "^0.66.6",
+    "tape": "^4.9.1"
+  }
+}
